@@ -1,7 +1,7 @@
 var	express 	= require('express'),
 		fs			= require('fs'),
 		app 		= express(),
-		PORT		= process.env.PORT || 4000;
+		PORT		= process.env.PORT || 80;
 
 
 app.use(express.static('view/build'));
