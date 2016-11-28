@@ -7,8 +7,7 @@ var	express 	= require('express'),
 app.use('/',express.static('view/directory'));
 
 app.get('/form', (req, res) => {
-	console.log("FFUUUUUU!!!!");
-	res.send(fs.readFileSync('view/form/index.html', 'utf8'));
+	res.send(fs.readFileSync('view/form/karls/index.html', 'utf8'));
 	res.end();
 });
 
