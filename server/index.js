@@ -30,6 +30,10 @@ app.post('/newUser', (req, res) => {
 	res.end();
 });
 
+app.get('/users', (req, res) => {
+
+});
+
 app.listen(PORT, ()=>{
 	console.log("Listening on port: " + PORT);
 });

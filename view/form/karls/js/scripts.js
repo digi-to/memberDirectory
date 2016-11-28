@@ -8,20 +8,16 @@ function go() {
   var p3 =  document.getElementById("project3").value;
   var projects = [p1, p2, p3];
 
-var post_obj = {
-
-  "fname" :  fname,
-  "lname" :  lname,
-  "email" :  email,
-  "desc" :  desc,
-  "projects" : projects
-  }
-console.log(post_obj);
-var request = new XMLHttpRequest();
-request.open("post", "/newuser", true);
-request.setRequestHeader("Content-type", "application/json");
-request.send(post_obj);
-
-
-
+   var post_obj = {
+      "fname" :  fname,
+      "lname" :  lname,
+      "email" :  email,
+      "desc" :  desc,
+      "projects" : projects
+   }
+   console.log(post_obj);
+   var request = new XMLHttpRequest();
+   request.open("post", "/newuser", true);
+   request.setRequestHeader("Content-type", "application/json");
+   request.send(JSON.stringify(post_obj));
 }
