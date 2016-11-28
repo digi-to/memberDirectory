@@ -2,13 +2,13 @@ var	express		= require('express'),
 		fs				= require('fs'),
 		bodyParser	= require('body-parser'),
 		app 			= express(),
-		mysql			= require('mysql2'),
+		mysql			= require('mysql'),
 		queries		= require('./sqlQueries.js').queries(),
 		PORT			= process.env.PORT || 4000,
 		connection 	= mysql.createConnection({
 			host     : 'localhost',
 			user     : 'root',
-			password : 'root',
+			password : 'hackerpass',
 			database : 'HACKATHON',
 			insecureAuth	:	true
 		});
