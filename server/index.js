@@ -6,12 +6,14 @@ var	express 	= require('express'),
 
 app.use('/',express.static('view/build'));
 
-// app.get('/', (req, res) => {
-// 	res.send(fs.readFileSync('view/form/index.html', 'utf8'));
-// 	res.end();
-// })
+app.get('/', (req, res) => {
+	console.log("FUUU!!!!");
+	res.send(fs.readFileSync('view/form/index.html', 'utf8'));
+	res.end();
+})
 
 app.get('/form', (req, res) => {
+	console.log("FFUUUUUU!!!!");
 	res.send(fs.readFileSync('view/form/index.html', 'utf8'));
 	res.end();
 });
