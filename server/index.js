@@ -6,10 +6,13 @@ var	express 	= require('express'),
 
 app.use('/',express.static('view/directory'));
 
-app.get('/form', (req, res) => {
-	res.send(fs.readFileSync('view/form/karls/index.html', 'utf8'));
-	res.end();
-});
+app.use('/form', express.static('view/form/karls'));
+
+// app.get('/form', (req, res) => {
+// 	res.send(fs.readFileSync('view/form/karls/index.html', 'utf8'));
+// 	// res.send(fs.readFileSync('view/form/karls/bulma.css', 'utf8'));
+// 	res.end();
+// });
 
 // app.post('/newUser', (req, res) => {
 // 	var userData = req.data;
