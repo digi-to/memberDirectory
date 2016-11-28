@@ -9,7 +9,8 @@ var	express		= require('express'),
 			host     : 'localhost',
 			user     : 'root',
 			password : 'root',
-			database : 'HACKATHON'
+			database : 'HACKATHON',
+			insecureAuth	:	true
 		});
 
 app.use(bodyParser.urlencoded({ extended:false }));
