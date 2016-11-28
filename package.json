@@ -9,7 +9,7 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "startDev": "nodemon server/index.js"s
+    "startDev": "nodemon server/index.js"
   },
   "repository": {
     "type": "git",
