@@ -1,10 +1,15 @@
 var	express 	= require('express'),
 		fs			= require('fs'),
 		app 		= express(),
-		PORT		= process.env.PORT || 80;
+		PORT		= process.env.PORT || 4000;
 
 
 app.use(express.static('view/build'));
+
+app.get('/', (req, res) => {
+	res.send(fs.readFileSync('view/form/index.html', 'utf8'));
+	res.en();
+})
 
 app.get('/form', (req, res) => {
 	res.send(fs.readFileSync('view/form/index.html', 'utf8'));
