@@ -8,12 +8,12 @@ app.use(express.static('view/build'));
 
 app.get('/', (req, res) => {
 	res.send(fs.readFileSync('view/form/index.html', 'utf8'));
-	res.en();
+	res.end();
 })
 
 app.get('/form', (req, res) => {
 	res.send(fs.readFileSync('view/form/index.html', 'utf8'));
-	res.en();
+	res.end();
 });
 
 // app.post('/newUser', (req, res) => {
