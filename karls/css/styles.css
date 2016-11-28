@@ -1,0 +1,115 @@
+/* ------------------------------------------- */
+/* GLOBAL STYLES */
+/* ------------------------------------------- */
+
+html {
+	}
+
+body {
+	}
+
+/* GLOBAL TEXT STYLES */
+
+h1 {
+	}
+
+h2 {
+	}
+
+h3 {
+	font-size:20px;
+	margin-bottom:10px;
+	}
+
+h4 {
+	}
+
+h5 {
+	}
+
+h6 {
+	}
+
+p {
+	}
+
+/* END GLOBAL TEXT STYLES */
+
+/* GLOBAL LINK STYLES */
+
+a:link, a:visited {
+	}
+	a:hover {
+		}
+/* END GLOBAL LINK STYLES */
+
+/* GLOBAL LIST STYLES */
+ul {
+	}
+	li {
+		}
+/* END GLOBAL LIST STYLES */
+
+/* ------------------------------------------- */
+
+/* ------------------------------------------- */
+/* LAYOUT STYLES */
+/* ------------------------------------------- */
+
+/*Nav styles*/
+.hero.is-light a.nav-item, .hero.is-light .nav-item a:not(.button) {
+	color:#ffffff;
+}
+div.hero-head {
+	background-color:darkgreen;
+}
+div#big_banner {
+	background-image: url('../images/big_banner.png');
+	background-position:center;
+	background-size: cover;
+	height:200px;
+}
+div#name_wrap {
+
+}
+div#form_wrap label {
+	text-align:left;
+}
+div#form_wrap p.control {
+	margin-bottom:20px;
+}
+div#profile_links {
+}
+div#profile_links input {
+	margin-bottom:5px;
+}
+
+/* ------------------------------------------- */
+
+/* ------------------------------------------- */
+/* MODIFIERS */
+/* ------------------------------------------- */
+.align-left {
+  text-align:left;
+  }
+.align-right {
+  text-align:right;
+}
+.left {
+	float:left;
+	}
+
+.right {
+	float:right;
+	}
+
+.center {
+	}
+
+.nineSixty {
+	}
+.clear {
+	float:none;
+	clear:both;
+	}
+/* ------------------------------------------- */
