@@ -19,6 +19,7 @@ var post_obj = {
 console.log(post_obj);
 var request = new XMLHttpRequest();
 request.open("post", "/newuser", true);
+request.setRequestHeader("Content-type", "application/json");
 request.send(post_obj);
 
 
