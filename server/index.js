@@ -29,7 +29,6 @@ app.post('/newUser', (req, res) => {
 	connection.query(queryStr, (err, results, fields) => {
 		if (err) throw err;
 	});
-	connection.end();
 	res.end();
 });
 
