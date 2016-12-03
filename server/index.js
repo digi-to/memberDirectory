@@ -4,14 +4,14 @@ var	express		= require('express'),
 		app 			= express(),
 		mysql			= require('mysql2'),
 		queries		= require('./sqlQueries.js').queries(),
-		PORT			= process.env.PORT || 4040,
+		PORT			= process.env.PORT || 80,
 		connection 	= mysql.createConnection({
 			host     : 'localhost',
 			user     : 'root',
 			password : 'root',
 			database : 'HACKATHON',
 			insecureAuth	:	true,
-			port		: 8889
+			port		: 3306
 		});
 
 app.use(bodyParser.urlencoded({ extended:false }));
