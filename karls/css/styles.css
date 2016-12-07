@@ -10,7 +10,8 @@ body {
 
 /* GLOBAL TEXT STYLES */
 
-h1 {
+#main_col h1 {
+	font-size:24px;
 	}
 
 h2 {
@@ -84,6 +85,9 @@ div#profile_links input {
 	margin-bottom:5px;
 }
 
+#main_col .box {
+	
+}
 /* ------------------------------------------- */
 
 /* ------------------------------------------- */
